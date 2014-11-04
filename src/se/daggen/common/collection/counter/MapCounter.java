@@ -1,12 +1,10 @@
-package se.daggen.collection.counter;
+package se.daggen.common.collection.counter;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import se.daggen.collection.counter.Counter;
 
 public class MapCounter<E> implements Counter<E> {
 	

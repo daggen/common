@@ -1,4 +1,4 @@
-package se.daggen.common;
+package se.daggen.common.tools.math;
 
 import java.util.Arrays;
 import java.util.Collection;

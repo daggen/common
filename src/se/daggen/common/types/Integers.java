@@ -1,15 +1,19 @@
 package se.daggen.common.types;
 
-import java.util.Collection;
-import java.util.HashSet;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 import se.daggen.common.collection.Tuple;
 
 public class Integers {
 	private static final String ALL_NUMBERS = "123456789";
+	
+	public static Integer multiply(Integer... factors) {
+		return Arrays.asList(factors)
+				.parallelStream()
+				.reduce(0, (a, b) -> a * b);
+	}
 
 	public static List<Integer> getIntegerSplited(int integerToSplit) {
 		List<Integer> listOfNumbers = new LinkedList<>();
